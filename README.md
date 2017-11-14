@@ -15,6 +15,3 @@ git push
 
 #Bajar
 git Pull
-
-VALE JODER DEJAME YA 
-PUTA PUTA
