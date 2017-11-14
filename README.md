@@ -15,3 +15,5 @@ git push
 
 #Bajar
 git Pull
+Holaçsdcew
+pene
