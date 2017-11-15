@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1e02218cd3e694b37b648aaef7f51255
+timeCreated: 1510741438
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Belle Allure GS
+  fontNames:
+  - Belle Allure GS
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

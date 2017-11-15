@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bdffe15148d5b49bca817de50ce56a2a
+timeCreated: 1510741439
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hand Escort
+  fontNames:
+  - Hand Escort
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 082e09100d1794565ba48ffa244c6f36
+timeCreated: 1510741438
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hand writing Mutlu
+  fontNames:
+  - Hand writing Mutlu
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
