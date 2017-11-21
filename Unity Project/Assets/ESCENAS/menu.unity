@@ -596,10 +596,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 082e09100d1794565ba48ffa244c6f36, type: 3}
-    m_FontSize: 25
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -837,6 +837,14 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: 082e09100d1794565ba48ffa244c6f36,
         type: 3}
+    - target: {fileID: 11400002, guid: 05a81c3d5091440058129444d28322f3, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 05a81c3d5091440058129444d28322f3, type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05a81c3d5091440058129444d28322f3, type: 2}
   m_IsPrefabParent: 0
@@ -2527,6 +2535,14 @@ Prefab:
       value: 
       objectReference: {fileID: 12800000, guid: 082e09100d1794565ba48ffa244c6f36,
         type: 3}
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a93c012dd9ef6454fa7d140e976926f7, type: 2}
   m_IsPrefabParent: 0
@@ -2681,10 +2697,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 082e09100d1794565ba48ffa244c6f36, type: 3}
-    m_FontSize: 25
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2952,10 +2968,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 082e09100d1794565ba48ffa244c6f36, type: 3}
-    m_FontSize: 25
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
