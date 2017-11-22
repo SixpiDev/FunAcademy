@@ -14,16 +14,22 @@ public class FlechaDrc : MonoBehaviour, IPointerClickHandler
 
     void Start()
     {
-        cuantosClicks = 0;
+        cuantosClicks = 3;
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
         if(cuantosClicks < clicksMaximos)
         {
-            lugares.transform.position += new Vector3(75, 0, 0);
+            lugares.transform.position += new Vector3(-75, 0, 0);
             cuantosClicks++;
             otraFlecha.GetComponent<FlechaIzq>().cuantosClicks--;
+        }
+        else
+        {
+            lugares.transform.position += new Vector3(225, 0, 0);
+            cuantosClicks = 0;
+            otraFlecha.GetComponent<FlechaIzq>().cuantosClicks = clicksMaximos;
         }
     }
 
