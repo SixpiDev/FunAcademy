@@ -158,3 +158,5 @@ a6323457532772d5aa75fbfced349c31 Assembly-CSharp.dll:.SkyboxRotator
 679cbd78441ea3cc48fabd152315e168 Assembly-CSharp.dll:.FlechaIzq
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayToSecondScene
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeColor
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BackMenu
+f1b19bc060d321a17933edd3bacc19a1 Assembly-CSharp.dll:.SonidoBoton

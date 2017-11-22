@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 082e09100d1794565ba48ffa244c6f36
-timeCreated: 1510741438
+timeCreated: 1511355040
 licenseType: Free
 TrueTypeFontImporter:
   externalObjects: {}
@@ -10,7 +10,7 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Hand writing Mutlu
+  fontName: Escolar1
   fontNames:
   - Hand writing Mutlu
   fallbackFontReferences: []
