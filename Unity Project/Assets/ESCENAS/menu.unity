@@ -501,7 +501,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Facil
+  m_Text: "F\xE1cil"
 --- !u!222 &390912958
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3956,7 +3956,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Finlandes
+  m_Text: "Finland\xE9s"
 --- !u!222 &1597925421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4266,9 +4266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Ingles
-
-'
+  m_Text: "Ingl\xE9s\n"
 --- !u!222 &1748252063
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5162,7 +5160,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Dificil
+  m_Text: "Dif\xEDcil"
 --- !u!222 &1984405249
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5568,7 +5566,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 05a81c3d5091440058129444d28322f3, type: 2}
       propertyPath: m_Text
-      value: Atras
+      value: "Atr\xE1s"
       objectReference: {fileID: 0}
     - target: {fileID: 22400004, guid: 05a81c3d5091440058129444d28322f3, type: 2}
       propertyPath: m_AnchoredPosition.y

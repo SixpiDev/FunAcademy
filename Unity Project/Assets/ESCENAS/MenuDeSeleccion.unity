@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 1066580563}
   - component: {fileID: 1066580564}
   m_Layer: 0
-  m_Name: Colegio
+  m_Name: Casa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,7 +522,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1066580561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -225.9, y: 0, z: 0}
+  m_LocalPosition: {x: -221, y: 0, z: 0}
   m_LocalScale: {x: 9.081888, y: 9.081888, z: 9.081888}
   m_Children: []
   m_Father: {fileID: 789072193}
@@ -560,7 +560,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2fa9f5c298daa984e90aefdf15d367c9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d805723149926b84d9411978cb368ec9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

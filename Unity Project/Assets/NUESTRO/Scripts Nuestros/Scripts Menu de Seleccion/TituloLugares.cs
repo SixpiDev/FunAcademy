@@ -23,7 +23,7 @@ public class TituloLugares : MonoBehaviour {
         }
         else if(lugares.transform.position == new Vector3(225, 0, 0))
         {
-            Titulo.text = "Colegio";
+            Titulo.text = "Casa";
         }
     }
 }
