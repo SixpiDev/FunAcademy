@@ -5,9 +5,11 @@ using UnityEngine;
 public class Caida : MonoBehaviour {
 
     public float speed;
+    public bool apuntame;
+
     private Rigidbody2D rig;
     private SpriteRenderer sr;
-
+    
     
     void Awake()
     {

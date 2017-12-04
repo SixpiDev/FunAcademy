@@ -598,6 +598,7 @@ MonoBehaviour:
   spawnValues: {x: 23, y: 50, z: 124.3}
   cantidadDeMateriales: 30
   tiempoEntreMateriales: 3.5
+  objetivo: {fileID: 0}
 --- !u!4 &411173406
 Transform:
   m_ObjectHideFlags: 0

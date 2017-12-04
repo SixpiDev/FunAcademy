@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50716503282919594}
   - component: {fileID: 114573062764512978}
   - component: {fileID: 114592774899045926}
+  - component: {fileID: 114272661145033740}
   m_Layer: 0
   m_Name: lata
   m_TagString: amarillo
@@ -63,6 +64,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &114272661145033740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452523373920458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c48fc953fa05534387534bfa3382a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114573062764512978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,6 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 9
+  apuntame: 0
 --- !u!114 &114592774899045926
 MonoBehaviour:
   m_ObjectHideFlags: 1
