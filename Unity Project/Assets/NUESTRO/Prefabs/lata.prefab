@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114592774899045926}
   m_Layer: 0
   m_Name: lata
-  m_TagString: Untagged
+  m_TagString: amarillo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
