@@ -24,6 +24,9 @@ GameObject:
   - component: {fileID: 114573062764512978}
   - component: {fileID: 114933511158747758}
   - component: {fileID: 114473206578282348}
+  - component: {fileID: 114950218036919550}
+  - component: {fileID: 122589950206105496}
+  - component: {fileID: 114706314741564156}
   m_Layer: 0
   m_Name: pollo
   m_TagString: gris
@@ -38,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1452523373920458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23, y: 27.5, z: 124.3}
+  m_LocalPosition: {x: 0, y: 0, z: 124.3}
   m_LocalScale: {x: 8.901184, y: 8.901186, z: 8.901186}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,6 +91,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 9
   apuntame: 0
+--- !u!114 &114706314741564156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452523373920458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0fa3063b47b63644beacf7c7ab27901, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114933511158747758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,6 +113,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43195437862a79341b2f83be4e9b6589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114950218036919550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452523373920458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1014103ee1aaaa84d8330ac366680b79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posicionObjetivo: {x: 0, y: 0, z: 0}
+--- !u!122 &122589950206105496
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1452523373920458}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4286611584
+  m_Size: 8
 --- !u!212 &212332292606821300
 SpriteRenderer:
   m_ObjectHideFlags: 1

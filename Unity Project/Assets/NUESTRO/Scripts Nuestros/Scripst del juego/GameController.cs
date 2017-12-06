@@ -16,8 +16,11 @@ public class GameController : MonoBehaviour {
     public Queue<GameObject> enCaida = new Queue<GameObject>();
     public GameObject objetivo;
 
-	// Use this for initialization
-	void Start () {
+    GameObject cae;
+    
+
+    // Use this for initialization
+    void Start () {
         StartCoroutine(SpawnMaterials());
 	}
 	
@@ -26,12 +29,14 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i < cantidadDeMateriales; i++)
         {
             wop = false;
-            GameObject cae = materiales[Random.Range(0, materiales.Length)];
+            cae = materiales[Random.Range(0, materiales.Length)];
             Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
             Instantiate(cae, spawnPosition, Quaternion.identity);
        
             enCaida.Enqueue(cae);
             objetivo = enCaida.Peek();
+
+            enCaida.Peek().GetComponent<HaloScript>().ActivaHalo();
 
             yield return new WaitForSeconds(tiempoEntreMateriales);
         }
@@ -41,5 +46,10 @@ public class GameController : MonoBehaviour {
     {
         objetivo = enCaida.Peek();
         enCaida.Dequeue();
+    }
+
+    private void Update()
+    {
+
     }
 }

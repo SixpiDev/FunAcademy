@@ -1063,9 +1063,10 @@ GameObject:
   - component: {fileID: 1104620265}
   - component: {fileID: 1104620267}
   - component: {fileID: 1104620266}
+  - component: {fileID: 1104620268}
   m_Layer: 5
   m_Name: gris
-  m_TagString: Untagged
+  m_TagString: gris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1121,6 +1122,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1104620264}
+--- !u!114 &1104620268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1104620264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de3c909a60f0024393f7802e9af2217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proyectil: {fileID: 1269681475976264, guid: 26bda6af593666d4abc1dba1f450ceb8, type: 2}
 --- !u!1 &1112988419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,9 +1311,10 @@ GameObject:
   - component: {fileID: 1234905761}
   - component: {fileID: 1234905763}
   - component: {fileID: 1234905762}
+  - component: {fileID: 1234905764}
   m_Layer: 5
   m_Name: amarillo
-  m_TagString: Untagged
+  m_TagString: amarillo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1356,6 +1370,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1234905760}
+--- !u!114 &1234905764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1234905760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de3c909a60f0024393f7802e9af2217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proyectil: {fileID: 1269681475976264, guid: 26bda6af593666d4abc1dba1f450ceb8, type: 2}
 --- !u!1 &1344378109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,9 +1591,10 @@ GameObject:
   - component: {fileID: 1720236395}
   - component: {fileID: 1720236397}
   - component: {fileID: 1720236396}
+  - component: {fileID: 1720236398}
   m_Layer: 5
   m_Name: azul
-  m_TagString: Untagged
+  m_TagString: azul
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1623,6 +1650,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1720236394}
+--- !u!114 &1720236398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1720236394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de3c909a60f0024393f7802e9af2217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proyectil: {fileID: 1269681475976264, guid: 26bda6af593666d4abc1dba1f450ceb8, type: 2}
 --- !u!1 &1877727311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,9 +1808,10 @@ GameObject:
   - component: {fileID: 2092361766}
   - component: {fileID: 2092361768}
   - component: {fileID: 2092361767}
+  - component: {fileID: 2092361769}
   m_Layer: 5
   m_Name: verde
-  m_TagString: Untagged
+  m_TagString: verde
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1827,3 +1867,15 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2092361765}
+--- !u!114 &2092361769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2092361765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de3c909a60f0024393f7802e9af2217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proyectil: {fileID: 1269681475976264, guid: 26bda6af593666d4abc1dba1f450ceb8, type: 2}
