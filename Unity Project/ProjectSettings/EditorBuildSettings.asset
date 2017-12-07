@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ESCENAS/MenuDeSeleccion.unity
     guid: baf79d1ef56f1454eae85be9c1e2c729
+  - enabled: 1
+    path: Assets/ESCENAS/juego1.unity
+    guid: d9334db5458c28241a24f63bba5f627b

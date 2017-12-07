@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
     public Queue<GameObject> enCaida = new Queue<GameObject>();
     public GameObject objetivo;
 
+	public Caida caida;
     GameObject cae;
     
 
@@ -28,15 +29,19 @@ public class GameController : MonoBehaviour {
 	IEnumerator SpawnMaterials () {
         for (int i = 0; i < cantidadDeMateriales; i++)
         {
-            wop = false;
-            cae = materiales[Random.Range(0, materiales.Length)];
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
+			int materialRandom = Random.Range (0, materiales.Length);
+			float x = Random.Range (-spawnValues.x, spawnValues.x);
+
+
+			materiales [materialRandom].GetComponent<Caida> ().posCaida = x;			
+			cae = materiales[materialRandom];
+            Vector3 spawnPosition = new Vector3(x, spawnValues.y, spawnValues.z);
             Instantiate(cae, spawnPosition, Quaternion.identity);
        
             enCaida.Enqueue(cae);
             objetivo = enCaida.Peek();
 
-            enCaida.Peek().GetComponent<HaloScript>().ActivaHalo();
+           // enCaida.Peek().GetComponent<HALO>().ActivaHalo();
 
             yield return new WaitForSeconds(tiempoEntreMateriales);
         }

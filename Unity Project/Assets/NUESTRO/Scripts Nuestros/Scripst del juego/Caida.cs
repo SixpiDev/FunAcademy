@@ -6,6 +6,7 @@ public class Caida : MonoBehaviour {
 
     public float speed;
     public bool apuntame;
+	public float posCaida = 0;
 
     private Rigidbody2D rig;
     private SpriteRenderer sr;
@@ -19,6 +20,8 @@ public class Caida : MonoBehaviour {
     void Start () {
         rig.velocity = transform.up * -speed;
 	}
+
+
 	
 	
 }

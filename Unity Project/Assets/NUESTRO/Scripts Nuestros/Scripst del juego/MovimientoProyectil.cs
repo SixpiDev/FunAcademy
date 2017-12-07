@@ -20,7 +20,7 @@ public class MovimientoProyectil : MonoBehaviour {
     void Start () {
         //Debug.Log("Tag: "+ gc.objetivo.tag+" / X :" + gc.objetivo.transform.position.x + " / Y: " + gc.objetivo.transform.position.y);
 
-        Vector3 lanza = new Vector3(gc.objetivo.transform.position.x+15, gc.objetivo.transform.position.y+15, 0);   
+        Vector3 lanza = new Vector3(gc.objetivo.transform.position.x+0, gc.objetivo.transform.position.y+15, 0);   
         rb.velocity = lanza * speed;
 	}
 
