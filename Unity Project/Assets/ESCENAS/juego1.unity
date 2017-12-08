@@ -702,7 +702,7 @@ MonoBehaviour:
   - {fileID: 1452523373920458, guid: 664dbf2bd1aa691489cd46099875a94e, type: 2}
   spawnValues: {x: 23, y: 50, z: 124.3}
   cantidadDeMateriales: 30
-  tiempoEntreMateriales: 7
+  tiempoEntreMateriales: 2
   objetivo: {fileID: 0}
   caida: {fileID: 0}
 --- !u!4 &411173406
@@ -1216,7 +1216,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 498ee36f16cd58a4ab04f1adde8f357c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e994e87dbe75a4bdf8f93ae2e987fb59, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1464,7 +1464,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0806d32cbf9187f498995df212668f56, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0bc4187ada5a24d9e88123a3fe1f421b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1747,7 +1747,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 697aa6ca94266db429430a7cbd6099f4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fc02560f396434aca8214939bd544a84, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1964,7 +1964,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 59a3b72b80cd5174fa8a7c95310dc12e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 62e4a9ce8ea394bf590a1d7ccc58a444, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
