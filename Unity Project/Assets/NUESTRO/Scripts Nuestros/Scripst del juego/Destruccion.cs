@@ -13,7 +13,7 @@ public class Destruccion : MonoBehaviour {
 	}
 	
 	void Update () {
-		if(gameObject.transform.position.y < - 12.25 && ya == false)
+		if(gameObject.transform.position.y < - 15 && ya == false)
         {
             gc.eliminaPrimero();
             ya = true;

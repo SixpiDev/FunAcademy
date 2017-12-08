@@ -6,7 +6,9 @@ public class Caida : MonoBehaviour {
 
     public float speed;
     public bool apuntame;
-	public float posCaida = 0;
+	public float posCaida;
+
+    public int disparoAMaterial;
 
     private Rigidbody2D rig;
     private SpriteRenderer sr;
@@ -19,7 +21,10 @@ public class Caida : MonoBehaviour {
 
     void Start () {
         rig.velocity = transform.up * -speed;
-	}
+        posCaida = 0;
+        disparoAMaterial = 0;
+    }
+
 
 
 	
