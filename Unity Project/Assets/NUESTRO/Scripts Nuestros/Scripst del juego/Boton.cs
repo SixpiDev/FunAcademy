@@ -8,15 +8,15 @@ public class Boton : MonoBehaviour, IPointerClickHandler
 {
     public GameObject proyectil;
 
+    private BarraVida bd;
     private GameController gc;
-    private ScoreBar sb;
 
 	Vector3 pos = new Vector3(0f, -12.5f, 124.3f);
 
     void Start()
     {
         gc = FindObjectOfType<GameController>();
-        sb = FindObjectOfType<ScoreBar>();
+        bd = FindObjectOfType<BarraVida>();
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -28,11 +28,11 @@ public class Boton : MonoBehaviour, IPointerClickHandler
 			pos[0] = gc.objetivo.GetComponent<Caida> ().posCaida;
             Instantiate(proyectil, pos, Quaternion.identity);
             gc.eliminaPrimero();
-            sb.scoreAcierto();
+            bd.sumarPuntos(20);
         }
         else
         {
-            sb.scoreFallo();
+            bd.restarPuntos(10);
         }
         
     }
