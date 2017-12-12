@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 114933511158747758}
   - component: {fileID: 114473206578282348}
   - component: {fileID: 114950218036919550}
-  - component: {fileID: 122589950206105496}
   - component: {fileID: 114706314741564156}
   - component: {fileID: 70040790652359340}
   - component: {fileID: 114538536568719914}
@@ -119,8 +118,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   apuntame: 0
-  posCaida: 0.7899132
-  disparoAMaterial: 0
+  posCaida: 19.704338
+  disparoAMaterial: 1
 --- !u!114 &114706314741564156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,17 +154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   posicionObjetivo: {x: 0, y: 0, z: 0}
---- !u!122 &122589950206105496
-Halo:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1452523373920458}
-  m_Enabled: 0
-  m_Color:
-    serializedVersion: 2
-    rgba: 4286611584
-  m_Size: 8
 --- !u!212 &212332292606821300
 SpriteRenderer:
   m_ObjectHideFlags: 1

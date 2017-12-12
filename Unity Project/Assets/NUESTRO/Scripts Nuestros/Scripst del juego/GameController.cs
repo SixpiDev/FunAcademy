@@ -38,17 +38,16 @@ public class GameController : MonoBehaviour {
         for (int i = 0; i < cantidadDeMateriales; i++)
         {
             int materialRandom = nMaterialRandom();
-			float x = Random.Range (-spawnValues.x, spawnValues.x);
+            float x = Random.Range(-spawnValues.x, spawnValues.x);
 
             materiales[materialRandom].GetComponent<Caida>().posCaida = x;
 
-			cae = materiales[materialRandom];
+            cae = materiales[materialRandom];
             Vector3 spawnPosition = new Vector3(x, spawnValues.y, spawnValues.z);
             Instantiate(cae, spawnPosition, Quaternion.identity);
-       
+
             enCaida.Enqueue(cae);
             objetivo = enCaida.Peek();
-     
 
             yield return new WaitForSeconds(tiempoEntreMateriales);
         }
@@ -56,13 +55,11 @@ public class GameController : MonoBehaviour {
 
     public void eliminaPrimero()
     {
-        
         enCaida.Dequeue();
-        if(enCaida.Peek() != null)
+        if(enCaida.Count > 0)   
         {
             objetivo = enCaida.Peek();
         }
-
     }
 
     private int nMaterialRandom()

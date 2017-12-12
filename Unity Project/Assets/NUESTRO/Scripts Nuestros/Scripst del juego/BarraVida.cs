@@ -16,7 +16,7 @@ public class BarraVida : MonoBehaviour {
     public void sumarPuntos(float value)
     {
         Health += value;
-        HealthBar.size = Health * 100f;
+        HealthBar.size = Health / 100f;
     }
 
 }

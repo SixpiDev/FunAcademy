@@ -28,11 +28,11 @@ public class Boton : MonoBehaviour, IPointerClickHandler
 			pos[0] = gc.objetivo.GetComponent<Caida> ().posCaida;
             Instantiate(proyectil, pos, Quaternion.identity);
             gc.eliminaPrimero();
-            bd.sumarPuntos(20);
+            bd.sumarPuntos(10);
         }
         else
         {
-            bd.restarPuntos(10);
+            bd.restarPuntos(5);
         }
         
     }
