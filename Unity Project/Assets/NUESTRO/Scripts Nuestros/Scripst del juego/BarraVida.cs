@@ -5,7 +5,7 @@ using System.Collections;
 public class BarraVida : MonoBehaviour {
 
 	public Scrollbar HealthBar;
-	public float Health = 100;
+	public float Health;
 
 	public void restarPuntos(float value)
 	{

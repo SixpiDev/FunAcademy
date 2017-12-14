@@ -30,7 +30,7 @@ GameObject:
   - component: {fileID: 114538536568719914}
   m_Layer: 0
   m_Name: pollo 2
-  m_TagString: gris
+  m_TagString: marron
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

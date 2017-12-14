@@ -8,6 +8,7 @@ TagManager:
   - amarillo
   - verde
   - gris
+  - marron
   layers:
   - Default
   - TransparentFX

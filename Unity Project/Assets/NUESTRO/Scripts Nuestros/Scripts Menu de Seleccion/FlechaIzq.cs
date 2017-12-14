@@ -9,8 +9,15 @@ public class FlechaIzq : MonoBehaviour, IPointerClickHandler
     public GameObject lugares;
     public GameObject otraFlecha;
 
+    private GameControllerMenu gcm;
+
     public int clicksMaximos;
     public int cuantosClicks;
+
+    private void Awake()
+    {
+        gcm = FindObjectOfType<GameControllerMenu>();
+    }
 
     void Start()
     {
@@ -19,18 +26,20 @@ public class FlechaIzq : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if(cuantosClicks < clicksMaximos)
+        gcm.acaboDeSalir = true;
+        if (cuantosClicks < clicksMaximos)
         {
             lugares.transform.position += new Vector3(+75, 0, 0);
             cuantosClicks++;
             otraFlecha.GetComponent<FlechaDrc>().cuantosClicks--;
+            
         }
         else
         {
-            
             lugares.transform.position = new Vector3(0, 0, 0);
             cuantosClicks = 0;
             otraFlecha.GetComponent<FlechaDrc>().cuantosClicks = clicksMaximos;
+            
         }
     }
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class GameController : MonoBehaviour {
@@ -10,16 +11,48 @@ public class GameController : MonoBehaviour {
     public int cantidadDeMateriales = 5;  //Tiene que ser siempre menor que la longitud del array Materiales;
     public float tiempoEntreMateriales = 0.5f;
 
+    public GameObject gameOver;
+    public GameObject completado;
+    public GameObject oscurecedorFinal;
+    public GameObject reintentar;
+    public GameObject irAMenu;
+
+    public GameObject fireworks;
+    public GameObject fireworks2;
+
     public int[] caidoYa = new int[3];
 
     public Queue<GameObject> enCaida = new Queue<GameObject>();
     public GameObject objetivo;
 
+    private BotonVale botonV;
+    private int unaVez;
+
+    private BarraVida bd;
+
     GameObject cae;
+
+    private EstadoJuego estadoJuego;
+
+    bool seAcabo = false;
+
+    int cont2 = 0;
+
+    private QueLugar queLugar;
     
 
     // Use this for initialization
     void Start () {
+        estadoJuego = FindObjectOfType<EstadoJuego>();
+
+        queLugar = FindObjectOfType<QueLugar>();
+        //Debug.Log(queLugar.getNivel());
+        unaVez = 0;
+        cont2 = 0;
+
+        botonV = FindObjectOfType<BotonVale>();
+        bd = FindObjectOfType<BarraVida>();
+
         for (int i = 0; i < caidoYa.Length; i++)
         {
             caidoYa[i] = -1;
@@ -29,13 +62,49 @@ public class GameController : MonoBehaviour {
         {
             materiales[i].GetComponent<Caida>().disparoAMaterial = 0;
         }
-
-        StartCoroutine(SpawnMaterials());
 	}
-	
-	// Update is called once per frame
-	IEnumerator SpawnMaterials () {
-        for (int i = 0; i < cantidadDeMateriales; i++)
+
+    private void Update()
+    {
+        if(botonV.getPulsado() == true && unaVez <= 0)
+        {
+            unaVez++;
+            StartCoroutine(SpawnMaterials());
+        }
+
+        if(bd.Health <= 0){
+            seAcabo = true;
+            oscurecedorFinal.SetActive(true);
+            gameOver.SetActive(true);
+            reintentar.SetActive(true);
+            irAMenu.SetActive(true);
+            
+        }
+
+        if(bd.Health >= 100)
+        {
+            estadoJuego.setCompletado(true);
+            seAcabo = true;
+            oscurecedorFinal.SetActive(true);
+            fireworks.SetActive(true);
+            fireworks2.SetActive(true);
+            completado.SetActive(true);
+            if(cont2 <= 0)
+            {
+                cont2++;
+                StartCoroutine(juegoFinalizadoIrAMenu());
+            }
+        }
+    }
+
+    IEnumerator juegoFinalizadoIrAMenu()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("MenuDeSeleccion");
+    }
+
+    IEnumerator SpawnMaterials () {
+        for (int i = 0; i < cantidadDeMateriales && seAcabo == false; i++)
         {
             int materialRandom = nMaterialRandom();
             float x = Random.Range(-spawnValues.x, spawnValues.x);
@@ -96,5 +165,10 @@ public class GameController : MonoBehaviour {
             }
         }
         return resultado;
+    }
+
+    public bool getSeAcabo()
+    {
+        return seAcabo;
     }
 }
