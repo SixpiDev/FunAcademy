@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour {
     public GameObject reintentar;
     public GameObject irAMenu;
 
+    public AudioClip juegoCompletado;
+
     public GameObject fireworks;
     public GameObject fireworks2;
 
@@ -39,6 +41,7 @@ public class GameController : MonoBehaviour {
     int cont2 = 0;
 
     private QueLugar queLugar;
+
     
 
     // Use this for initialization
@@ -89,9 +92,11 @@ public class GameController : MonoBehaviour {
             fireworks.SetActive(true);
             fireworks2.SetActive(true);
             completado.SetActive(true);
-            if(cont2 <= 0)
+            if (cont2 <= 0)
             {
                 cont2++;
+                gameObject.GetComponent<AudioSource>().clip = juegoCompletado;
+                gameObject.GetComponent<AudioSource>().Play();
                 StartCoroutine(juegoFinalizadoIrAMenu());
             }
         }
@@ -99,7 +104,7 @@ public class GameController : MonoBehaviour {
 
     IEnumerator juegoFinalizadoIrAMenu()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         SceneManager.LoadScene("MenuDeSeleccion");
     }
 

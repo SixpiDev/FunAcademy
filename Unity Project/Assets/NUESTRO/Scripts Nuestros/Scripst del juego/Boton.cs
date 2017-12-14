@@ -7,6 +7,10 @@ using UnityEngine.EventSystems;
 public class Boton : MonoBehaviour, IPointerClickHandler
 {
     public GameObject proyectil;
+    public GameObject gController;
+
+    public AudioClip acierto;
+    public AudioClip fallo;
 
     private BarraVida bd;
     private GameController gc;
@@ -27,12 +31,16 @@ public class Boton : MonoBehaviour, IPointerClickHandler
 			//Debug.Log (gc.objetivo.GetComponent<Caida> ().posCaida);
 			pos[0] = gc.objetivo.GetComponent<Caida> ().posCaida;
             Instantiate(proyectil, pos, Quaternion.identity);
+            gController.GetComponent<AudioSource>().clip = acierto;
+            gController.GetComponent<AudioSource>().Play();
             gc.eliminaPrimero();
             bd.sumarPuntos(50);
+            
         }
         else
         {
             bd.restarPuntos(5);
+            Handheld.Vibrate();
         }
         
     }

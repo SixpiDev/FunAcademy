@@ -12,6 +12,8 @@ public class BotonVale : MonoBehaviour, IPointerClickHandler
     public GameObject cuadroInformativo;
     public GameObject oscurecedor;
 
+    public AudioSource musicaJuego;
+
 	// Use this for initialization
 	void Start () {
         pulsado = false;
@@ -23,6 +25,7 @@ public class BotonVale : MonoBehaviour, IPointerClickHandler
         cuadroInformativo.SetActive(false);
         oscurecedor.SetActive(false);
         gameObject.SetActive(false);
+        musicaJuego.Play();
     }
 
     public bool getPulsado()

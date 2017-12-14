@@ -7,7 +7,7 @@ public class BarraVida : MonoBehaviour {
 	public Scrollbar HealthBar;
 	public float Health;
 
-	public void restarPuntos(float value)
+    public void restarPuntos(float value)
 	{
 		Health -= value;
 		HealthBar.size = Health / 100f;
@@ -18,5 +18,4 @@ public class BarraVida : MonoBehaviour {
         Health += value;
         HealthBar.size = Health / 100f;
     }
-
 }
