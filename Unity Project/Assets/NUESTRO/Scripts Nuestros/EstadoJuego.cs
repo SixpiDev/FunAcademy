@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EstadoJuego : MonoBehaviour {
 
-    private static int nivel = 1;
+    public static int nivel = 1;
     private static bool completadoUno;
     private static bool completadoDos;
     private static bool completadoTres;
@@ -52,6 +52,9 @@ public class EstadoJuego : MonoBehaviour {
             completadoCuatro = b;
         }
     }
+
+
+
 
     public bool getCompletado(int n)
     {

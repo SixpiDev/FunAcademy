@@ -6,7 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
-    public GameObject[] materiales = new GameObject[25];
+    public GameObject[] materiales;
+
+	public GameObject[] granja = new GameObject[25];
+	public GameObject[] parque = new GameObject[25];
+	public GameObject[] hospital = new GameObject[25];
+	public GameObject[] casa = new GameObject[25];
+
+
+
+
+
     public Vector3 spawnValues;
     public int cantidadDeMateriales = 5;  //Tiene que ser siempre menor que la longitud del array Materiales;
     public float tiempoEntreMateriales = 0.5f;
@@ -22,7 +32,7 @@ public class GameController : MonoBehaviour {
     public GameObject fireworks;
     public GameObject fireworks2;
 
-    public int[] caidoYa = new int[3];
+    public int[] caidoYa = new int[20];
 
     public Queue<GameObject> enCaida = new Queue<GameObject>();
     public GameObject objetivo;
@@ -40,16 +50,25 @@ public class GameController : MonoBehaviour {
 
     int cont2 = 0;
 
-    private QueLugar queLugar;
+
 
     
 
     // Use this for initialization
     void Start () {
-        estadoJuego = FindObjectOfType<EstadoJuego>();
+		estadoJuego = FindObjectOfType<EstadoJuego>();
 
-        queLugar = FindObjectOfType<QueLugar>();
-        //Debug.Log(queLugar.getNivel());
+		if(estadoJuego.getNivel() == 1){
+			materiales = granja;
+		}else if(estadoJuego.getNivel() == 2){
+			materiales = parque;
+		}else if(estadoJuego.getNivel() == 3){
+			materiales = hospital;
+		}else if(estadoJuego.getNivel() == 4){
+			materiales = casa;
+		}        
+
+
         unaVez = 0;
         cont2 = 0;
 
