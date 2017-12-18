@@ -1043,14 +1043,16 @@ MonoBehaviour:
   - {fileID: 1452523373920458, guid: f52e4e26197072040aa56d89e38b389b, type: 2}
   - {fileID: 1452523373920458, guid: 6ad836c6dcfeac847a0f1e41ca722054, type: 2}
   - {fileID: 1452523373920458, guid: 664dbf2bd1aa691489cd46099875a94e, type: 2}
-  - {fileID: 1452523373920458, guid: cda342de65ad6f54b971435a59b2fcd1, type: 2}
-  - {fileID: 1452523373920458, guid: 7e33b9a48c693a648a3f32cb5fa8252f, type: 2}
-  - {fileID: 1452523373920458, guid: d5d7fb2d77970164299360b18f24796b, type: 2}
-  - {fileID: 1452523373920458, guid: 2d673fe0009a01047a41d22530eaf4cf, type: 2}
-  - {fileID: 1452523373920458, guid: d2435ab242869e04883c3c370385fd67, type: 2}
-  - {fileID: 1452523373920458, guid: 9af598f1bdb906b4f92fc86fcc032855, type: 2}
+  - {fileID: 1452523373920458, guid: 35619e1f909f7cc468d6147249b886c9, type: 2}
+  - {fileID: 1452523373920458, guid: fe89233960a6f964989c60c5cc05c113, type: 2}
+  - {fileID: 1452523373920458, guid: ee5ed3d918bde3b40ad26dbc3d33a7bb, type: 2}
+  - {fileID: 1452523373920458, guid: 4379aeb5c8e27774da09607cdaef620e, type: 2}
+  - {fileID: 1452523373920458, guid: c7d9e76fff597c24e86ffcf056dde5f9, type: 2}
+  - {fileID: 1452523373920458, guid: 6c36969af55d02646a9aacd9d7574e93, type: 2}
+  - {fileID: 1452523373920458, guid: bd95962483a07e04ab8719884259464d, type: 2}
+  - {fileID: 1452523373920458, guid: 8f8a6a52e9ddd4c449ef67ba475a7831, type: 2}
   spawnValues: {x: 23, y: 46, z: 124.3}
-  cantidadDeMateriales: 9
+  cantidadDeMateriales: 11
   tiempoEntreMateriales: 3
   gameOver: {fileID: 531859807}
   completado: {fileID: 676044974}
