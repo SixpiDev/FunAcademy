@@ -34,12 +34,12 @@ public class Boton : MonoBehaviour, IPointerClickHandler
             gController.GetComponent<AudioSource>().clip = acierto;
             gController.GetComponent<AudioSource>().Play();
             gc.eliminaPrimero();
-            bd.sumarPuntos(5);
+            bd.sumarPuntos(10);
             
         }
         else
         {
-            bd.restarPuntos(10);
+            bd.restarPuntos(5);
             Handheld.Vibrate();
         }
         
