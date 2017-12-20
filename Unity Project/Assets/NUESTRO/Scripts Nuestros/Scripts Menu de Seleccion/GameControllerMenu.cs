@@ -25,6 +25,8 @@ public class GameControllerMenu : MonoBehaviour {
 
     public int UnaVezPulsadoTrasJuegoNoMoverLugares = 0;
 
+    public GameObject particulas;
+
     void Awake()
     {
         estadoJuego = FindObjectOfType<EstadoJuego>();
@@ -34,22 +36,22 @@ public class GameControllerMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () { 
-        if(estadoJuego.getCompletado(1) == true)
+        if(estadoJuego.getCompletado(1) == true && estadoJuego.getNivel() != 1)
         {
             granjaFea.SetActive(false);
             granjaBonita.SetActive(true);
         }
-        if (estadoJuego.getCompletado(2) == true)
+        if (estadoJuego.getCompletado(2) == true && estadoJuego.getNivel() != 2)
         {
             parqueFeo.SetActive(false);
             parqueBonito.SetActive(true);
         }
-        if (estadoJuego.getCompletado(3) == true)
+        if (estadoJuego.getCompletado(3) == true && estadoJuego.getNivel() != 3)
         {
             hospitalFea.SetActive(false);
             hospitalBonita.SetActive(true);
         }
-        if (estadoJuego.getCompletado(4) == true)
+        if (estadoJuego.getCompletado(4) == true && estadoJuego.getNivel() != 4)
         {
             casaFea.SetActive(false);
             casaBonita.SetActive(true);
@@ -107,26 +109,33 @@ public class GameControllerMenu : MonoBehaviour {
         }
 
         if(estadoJuego.getCompletado(estadoJuego.getNivel()) == true)
-        {
-            if(estadoJuego.getNivel() == 1)
+        { 
+            if (estadoJuego.getNivel() == 1)
             {
-                granjaFea.SetActive(false);
-                granjaBonita.SetActive(true);
-            }else if(estadoJuego.getNivel() == 2)
+                StartCoroutine(efectoParticulas(granjaFea, granjaBonita));
+            }
+            else if(estadoJuego.getNivel() == 2)
             {
-                parqueFeo.SetActive(false);
-                parqueBonito.SetActive(true);
+                StartCoroutine(efectoParticulas(parqueFeo, parqueBonito));
             }else if(estadoJuego.getNivel() == 3)
             {
-                hospitalFea.SetActive(false);
-                hospitalBonita.SetActive(true);      
+                StartCoroutine(efectoParticulas(hospitalFea, hospitalBonita));     
             }else if(estadoJuego.getNivel() == 4)
             {
-                casaFea.SetActive(false);
-                casaBonita.SetActive(true);     
+                StartCoroutine(efectoParticulas(casaFea, casaBonita));  
             }
             
         }
+    }
+
+    IEnumerator efectoParticulas(GameObject fea, GameObject bonita)
+    {
+        yield return new WaitForSeconds(0.3f);
+        particulas.SetActive(true);
+        yield return new WaitForSeconds(1.2f);
+        fea.SetActive(false);
+        bonita.SetActive(true);
+        yield return new WaitForSeconds(0.3f);
     }
 
 
